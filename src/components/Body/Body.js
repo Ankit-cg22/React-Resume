@@ -5,6 +5,7 @@ import { Languages_Info , Techstack_Info , KeyCourses_Info , Experience_Info , P
 import Experience from '../Experience/Experience'
 import Project from '../Project/Project'
 import Education from '../Education/Education'
+import BulletPoints from '../BulletPoints/BulletPoints'
 export default function Body() {
   return (
     <div className='body-main-container'>
@@ -19,30 +20,28 @@ export default function Body() {
               <div className="body-section-title">
                 <div className='body-title-container'>Experience</div>
               </div>
-              {Experience_Info.map(exp => <Experience {...exp}/>)}
+              {Experience_Info.map(exp => <Experience experienceObject={exp}/>)}
           </div>
           <div className='body-projects-div'>
               <div className="body-section-title">
                 <div className='body-title-container'>Projects</div>
                 
               </div>
-              {Project_Info.map(proj => <Project {...proj}/>)}
+              {Project_Info.map(proj => <Project projectObject={proj}/>)}
 
           </div>
           <div className='body-education-div'>
               <div className="body-section-title">
                 <div className='body-title-container'>Achievements</div>
               </div>
-              <ul>
-                {Achievements_info.map((ach , i) => <li key={i}>{ach}</li>)}
-              </ul>
+              <BulletPoints bulletPoints={Achievements_info}/>
 
           </div>
           <div className='body-education-div'>
               <div className="body-section-title">
                 <div className='body-title-container'>Education</div>
               </div>
-              {Education_info.map(edu => <Education {...edu}/>)}
+              {Education_info.map(edu => <Education educationObject={edu}/>)}
 
           </div>
         </div>

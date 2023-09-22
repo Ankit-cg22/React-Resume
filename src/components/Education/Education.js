@@ -1,20 +1,20 @@
 import React from 'react'
 import './style.css'
 
-export default function Education(obj) {
+export default function Education({educationObject}) {
   return (
     <div className='education-main-container'>
         <div className='education-top-container'>
             <div className='education-institution-name'>
-                {obj.institution}
+                {educationObject.institution}
             </div>
             <div className='education-duration'>
-                {`${obj.start}-${obj.end}`}
+                {`${educationObject.start}-${educationObject.end}`}
             </div>
         </div>
         <div className='education-details'>
-            <div className='education-degree-discipline'>{`${obj.degree} , ${obj.discipline}`}</div>
-            <div className='education-grade'>{obj.grade}</div>
+            <div className='education-degree-discipline'>{`${educationObject.degree} , ${educationObject.discipline}`}</div>
+            <div className='education-grade'>{educationObject.grade}</div>
         </div>
     </div>
   )

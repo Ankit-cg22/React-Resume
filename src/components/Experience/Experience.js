@@ -1,28 +1,23 @@
 import React from 'react'
 import './style.css'
+import BulletPoints from '../BulletPoints/BulletPoints'
 
-export default function Experience(obj) {
+export default function Experience({experienceObject}) {
   return (
     <div className='experience-main-container'>
         <div className='experience-top-container'>
             <div className='experience-company-position'>
-                <div className='experience-company-name'>{obj.company}</div>
-                <div className='experience-position'>{obj.position}</div>
+                <div className='experience-company-name'>{experienceObject.company}</div>
+                <div className='experience-position'>{experienceObject.position}</div>
             </div>
             <div className='experience-certificate-duration'>
                 <div className='experience-certificate-link'>
-                    <a href={obj.certificateLink}>Certificate</a>
+                    <a href={experienceObject.certificateLink}>Certificate</a>
                 </div>
-                <div className='experience-duration'>{`${obj.start}-${obj.end}`}</div>
+                <div className='experience-duration'>{`${experienceObject.start}-${experienceObject.end}`}</div>
             </div>
         </div>
-        <div className='experience-work-details'>
-            <ul>
-                {obj.workDetails.map((w, i)=>(
-                    <li key={i}>{w}</li>
-                ))}
-            </ul>
-        </div>
+        <BulletPoints bulletPoints={experienceObject.workDetails}/>
     </div>
   )
 }

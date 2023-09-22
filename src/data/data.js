@@ -1,31 +1,31 @@
 export const Languages_Info = {
     title : "Languages" ,
     list: [
-            {text : "C++" , icon : "./icons/c++.png"}, 
-            {text : "C" , icon : "./icons/c.png"},
-            {text : "Java" , icon : "./icons/java.png"},
-            {text : "JavaScript" , icon : "./icons/javascript.png"}
+            {text : "C++" , icon : require("../assets/icons/c++.png")}, 
+            {text : "C" , icon : require("../assets/icons/c.png")},
+            {text : "Java" , icon : require("../assets/icons/java.png")},
+            {text : "JavaScript" , icon : require("../assets/icons/javascript.png")}
         ]
 }
 
 export const Techstack_Info = {
     title : "Tech Stack" ,
     list : [
-            {text : "ReactJS" , icon : "./icons/reactjs.png"}, 
-            {text : "NodeJS" , icon : "./icons/nodejs.png"},
-            {text : "NextJs" , icon : "./icons/nextjs.png"},
-            {text : "MongoDB" , icon : "./icons/mongodb.png"} , 
-            {text : "Postgres" , icon : "./icons/postgres.png"}
+            {text : "ReactJS" , icon : require("../assets/icons/reactjs.png")}, 
+            {text : "NodeJS" , icon : require("../assets/icons/nodejs.png")},
+            {text : "NextJs" , icon : require("../assets/icons/nextjs.png")},
+            {text : "MongoDB" , icon : require("../assets/icons/mongodb.png")} , 
+            {text : "Postgres" , icon : require("../assets/icons/postgres.png")}
         ]
 }
 
 export const KeyCourses_Info = {
     title:"Key Courses" ,
     list : [
-            {text : "DSA" , icon : "./icons/dsa.png"}, 
-            {text : "OOPS" , icon : "./icons/oops.png"},
-            {text : "CN" , icon : "./icons/network.png"},
-            {text : "RDBMS" , icon : "./icons/database.png"}
+            {text : "DSA" , icon : require("../assets/icons/dsa.png")}, 
+            {text : "OOPS" , icon : require("../assets/icons/oops.png")},
+            {text : "CN" , icon : require("../assets/icons/network.png")},
+            {text : "RDBMS" , icon : require("../assets/icons/database.png")} 
         ]
 }
 
