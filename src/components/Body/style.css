@@ -1,0 +1,35 @@
+.body-main-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height : 80vh;
+    min-height: 800px;
+    max-width: 1400px;
+    min-width: 1200px;
+    margin: auto;
+}
+.body-sidebar{
+    width: 25%;
+    height : 100%;
+}
+.body-main-div{
+    width: 75%;
+    height:100%;
+}
+.body-border-div{
+    border:1px solid grey;
+    height : 80%
+}
+
+.body-section-title{
+    font-size: 2rem;
+}
+
+.body-section-title{
+    padding:2% 3% ;
+}
+
+.body-title-container{
+    border-bottom: 3px solid rgb(151, 235, 221);
+    padding-bottom: 2px;
+}

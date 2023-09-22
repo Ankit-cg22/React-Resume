@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  font-family: 'Inter', sans-serif;
 }
 
 .App-logo {
@@ -35,4 +36,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+ul{
+  line-height: 1.5rem;
 }

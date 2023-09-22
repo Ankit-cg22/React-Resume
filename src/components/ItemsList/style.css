@@ -1,0 +1,26 @@
+.itemlist-main-container{
+    margin: 50px 50px 0px 0px;
+}
+
+.itemlist-title{
+    font-size: 1.5rem;
+    border-bottom :3px solid rgb(151, 235, 221) ;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-bottom : 2%
+}
+
+.itemlist-items{
+    width : 60%;
+    margin:auto
+}
+
+.itemlist-item-holder img{
+    height:1.25rem;
+    margin-right: 0.75rem;
+}
+.itemlist-item-holder{
+    display: flex;
+    align-items: center;
+}
