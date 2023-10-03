@@ -1,27 +1,26 @@
-import React from 'react'
-import "./style.css"
-import BulletPoints from '../BulletPoints/BulletPoints'
+import React from 'react';
+import HOC from '../HOC/HOC';
+import './style.css'
 
-export default function Project({projectObject}) {
-  return (
-    <div className='project-main-container'>
-        <div className='project-top-container'>
-            <div className='project-title-techstack'>
-                <div className='project-title'>{projectObject.title}</div>
-                <div className='project-techstack'>
-                    {projectObject.techStack.map((t , i)=> <span id={i}>{`${t} ${i!==projectObject.techStack.length-1 ?  ', ' : ''}`}</span>)}
-                </div>
+const techStackInfo = ({data}) => {
+    return(
+        <div className='project-techstack'>
+            {data.map((tech , i)=> <span id={i}>{`${tech} ${i!==data.length-1 ?  ', ' : ''}`}</span>)}
+        </div>
+    )   
+}
+
+const projectLinks = ({data}) => {
+    return (
+        <div className='project-urls'>
+            <div className='project-website-url'>
+                <a href={data.websiteURL}>Website</a>
             </div>
-            <div className='project-urls'>
-                <div className='project-website-url'>
-                    <a href={projectObject.websiteURL}>Website</a>
-                </div>
-                <div className='project-github-url'>
-                    <a href={projectObject.githubURL}>Github</a>
-                </div>
+            <div className='project-github-url'>
+                <a href={data.githubURL}>Github</a>
             </div>
         </div>
-        <BulletPoints bulletPoints={projectObject.projectDescription}/>
-    </div>
-  )
+    )
 }
+const Project = HOC(techStackInfo , projectLinks);
+export default Project;

@@ -1,21 +1,24 @@
-import React from 'react'
+import React from 'react';
 import './style.css'
+import HOC from '../HOC/HOC';
 
-export default function Education({educationObject}) {
-  return (
-    <div className='education-main-container'>
-        <div className='education-top-container'>
-            <div className='education-institution-name'>
-                {educationObject.institution}
-            </div>
-            <div className='education-duration'>
-                {`${educationObject.start}-${educationObject.end}`}
-            </div>
-        </div>
+const courseAndGradeInfo = ({data}) => {
+    return(
         <div className='education-details'>
-            <div className='education-degree-discipline'>{`${educationObject.degree} , ${educationObject.discipline}`}</div>
-            <div className='education-grade'>{educationObject.grade}</div>
+            <div className='education-degree-discipline'>{`${data.degree} , ${data.discipline}`}</div>
+            <div className='education-grade'>{data.grade}</div>
         </div>
-    </div>
-  )
+    )
 }
+
+const durationInfo = ({data}) => {
+    return(
+        <div className='education-duration'>
+            {`${data.start}-${data.end}`}
+        </div>
+    )
+}
+
+const Education = HOC(courseAndGradeInfo , durationInfo);
+
+export default Education;

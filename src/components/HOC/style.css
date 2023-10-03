@@ -1,0 +1,11 @@
+.hoc-top-container{
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 3%;
+}
+
+.hoc-title{
+    font-size: 1.5rem;
+}

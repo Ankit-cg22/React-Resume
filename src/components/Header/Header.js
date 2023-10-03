@@ -20,8 +20,8 @@ export default function Header() {
         </div>
         <div className="header-border-div"></div>
         <div className='header-contact-info'>
-            <ul>
-              <li>
+              <ul>
+                <li>
                   <div className='header-info-icon'><img src={emailIcon}/></div>
                   <p>ankitdas.cg22@gmail.com</p>
               </li>
