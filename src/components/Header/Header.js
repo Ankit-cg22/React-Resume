@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import '../../css/index.css'
 import profilePic from '../../assets/icons/image.jpeg'
 import emailIcon from '../../assets/icons/email.png'
 import phoneIcon from '../../assets/icons/phone.png'

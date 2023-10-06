@@ -16,11 +16,11 @@
     margin:auto
 }
 
-.itemlist-item-holder img{
-    height:1.25rem;
-    margin-right: 0.75rem;
-}
 .itemlist-item-holder{
     display: flex;
     align-items: center;
+    img{
+        height:1.25rem;
+        margin-right: 0.75rem;
+    }
 }

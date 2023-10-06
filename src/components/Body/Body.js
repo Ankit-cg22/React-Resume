@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import '../../css/index.css'
 import ItemsList from '../ItemsList/ItemsList'
 import { Languages_Info , Techstack_Info , KeyCourses_Info , Experience_Info , Project_Info , Achievements_info, Education_info} from '../../data/data'
 import Experience from '../Experience/Experience'

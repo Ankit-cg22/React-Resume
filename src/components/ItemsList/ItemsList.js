@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import '../../css/index.css'
 export default function ItemsList({title , list}) {
   return (
     <div className='itemlist-main-container'>

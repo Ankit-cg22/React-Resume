@@ -1,10 +1,10 @@
 import React from 'react';
 import HOC from '../HOC/HOC';
-import './style.css'
+import '../../css/index.css'
 
 const designationInfo = ({data})=>{
     return (
-        <div>
+        <div className="education-designation">
             {data}
         </div>
     )

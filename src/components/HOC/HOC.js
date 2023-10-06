@@ -1,6 +1,6 @@
 import React from 'react'
 import BulletPoints from '../BulletPoints/BulletPoints';
-import './style.css'
+import '../../css/index.css'
 
 const HOC = (SubTitleComponent , SideInfoComponent) => {
     return class extends React.Component{

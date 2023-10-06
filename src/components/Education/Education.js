@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css'
+import '../../css/index.css'
 import HOC from '../HOC/HOC';
 
 const courseAndGradeInfo = ({data}) => {

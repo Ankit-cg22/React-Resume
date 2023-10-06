@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../../css/index.css'
 export default function BulletPoints({bulletPoints}) {
   return (
     <div className='bulletPoints-work-details'>
